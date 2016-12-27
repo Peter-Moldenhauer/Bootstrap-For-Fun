@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Peters Web Page</title>
+    <!-- code below used for bootstrap -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- viewport is the users screen, and the 2 settings used here is the width of screen of device and initial scale means don't zoom in or out just 100% -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> <!-- css file where you get default styling, coloring and look of different widgets --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  <!-- standard jquery library --> 
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>  <!-- bootstrap javascript file --> 
+	<!-- code above used for bootstrap --> 
+</head>
+<body>
+
+	<!-- Default text styling that is built into Bootstrap --> 
+	
+	<div class="container">     <!-- class=container-fluid is full screen, class=container is just a fixed width --> 
+		
+		<br>
+		<p>You can highligh words or <mark>text using the mark</mark> tags.</p>    <!-- highlighting -->
+		
+		<blockquote>                                           <!-- quote with sizing, spacing and line seperator --> 
+			<p>I have a dream that one day...</p>
+			<footer>Martin Luther King Jr.</footer>
+		</blockquote>
+		
+		<h4>Things to do when you're bored</h4>                                  <!-- list --> 
+		<dl>
+			<dt>Indoors</dt>
+				<dd>- take a nap</dd>
+				<dd>- watch Netflix shows on TV</dd>
+			<dt>Outdoors</dt>
+				<dd>- go back inside</dd>
+				<dd>- ride your bike around the block<dd>
+		</dl>
+		
+		<p>To set the users weight use <code>setUserWeight(182);</code> with an integer</p>   <!-- display 1 lined source code with code tags --> 
+		
+		<p>For multi line code use the pre tags</p>  <!-- display muulti lined scource code with pre tags (stands for preformatted text) --> 
+		<pre>
+for n in range(101):
+	if(n % 4 is 0):
+		print(n) 
+		</pre>
+		
+		<p>This is supposed to be keyboard input <kbd>Ctrl+Alt+Del</kbd></p>    <!-- keyboard input font --> 
+		
+		<!-- whenever you use bootstrap, it comes with predefined contextual colors --> 
+		<h4>Built in color classes</h4>
+		<p class="text-muted">Text muted</p>    <!-- muted is "disabled" or "not clickable text" font --> 
+		<p class="text-success">Congrats you filled out that form correctly</p>    <!-- green TEXT --> 
+		<p class="text-danger">Danger text</p>    <!-- red TEXT --> 
+		
+		<p class="bg-success">Congrats you filled out that form correctly</p>    <!-- green BACKROUND use bg --> 
+		<p class="bg-danger">Danger text</p>    <!-- red BACKGROUND use bg --> 
+		
+	</div>
+
+</body>
+</html>

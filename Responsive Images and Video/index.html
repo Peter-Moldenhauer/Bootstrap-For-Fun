@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Peters Web Page</title>
+    <!-- code below used for bootstrap -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- viewport is the users screen, and the 2 settings used here is the width of screen of device and initial scale means don't zoom in or out just 100% -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> <!-- css file where you get default styling, coloring and look of different widgets --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  <!-- standard jquery library --> 
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>  <!-- bootstrap javascript file --> 
+	<!-- code above used for bootstrap --> 
+</head>
+<body>
+
+	<!-- tables in bootstrap --> 
+	
+	<div class="container">     <!-- class=container-fluid is full screen, class=container is just a fixed width --> 
+		
+		<img src="gun.jpg" class="img-rounded" width="230" height="230">  <!-- slightly rounded image --> 
+		<img src="gun.jpg" class="img-circle" width="230" height="230">   <!-- image in a circle shape --> 
+		
+		<br/><br/>
+		
+		<img src="me.jpg" class="img-responsive" > <!-- responsive image (bootstrap class), image will shrink with the screen as screen gets smaller --> 
+		<img src="me.jpg"> <!-- nonresponsive plain old image --> 
+		
+		<br/><br/>
+		
+		<!-- make a video responsive, just copy the video code of a youtube vid for this... --> 
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/kxEjXuZ2Mpo"></iframe>
+		</div>
+		
+	</div>
+
+</body>
+</html>
