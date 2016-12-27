@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Peters Web Page</title>
+    <!-- code below used for bootstrap -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- viewport is the users screen, and the 2 settings used here is the width of screen of device and initial scale means don't zoom in or out just 100% -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> <!-- css file where you get default styling, coloring and look of different widgets --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  <!-- standard jquery library --> 
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>  <!-- bootstrap javascript file --> 
+	<!-- code above used for bootstrap --> 
+</head>
+<body>
+
+	<!-- Whenver we use bootstrap we can have a max of 12 columns - this is the "grid system" -->
+	<!-- Whenever we use the grid system it has 4 different classes: xs (extra small - phones), sm (small - tablets), md (medium - laptops) lg (large - large desktops) -->
+	<!-- These classes relate to what device you are trying to design your website for --> 
+	<!-- For now I am going to use just one class (md) that is responsive to every device --> 
+	
+	<div class="container-fluid">     <!-- class=container-fluid is full screen, class=container is just a fixed width --> 
+		
+		<h1>3 column layout</h1>
+		<div class="row">    <!-- whenever you make columns, they have to go inside rows, inside this row there are 3 columns --> 
+			<div class="col-md-4" style="background-color: #FF9999">Left</div>  <!-- column width is 4 because we only want 3 columns (12 max columns so 3 columns with a width of 4 for each) -->
+			<div class="col-md-4" style="background-color: #99CCFF">Middle</div>
+			<div class="col-md-4" style="background-color: #00CC99">Right</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>
