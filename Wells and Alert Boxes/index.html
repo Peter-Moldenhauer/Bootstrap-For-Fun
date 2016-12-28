@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Peters Web Page</title>
+    <!-- code below used for bootstrap -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- viewport is the users screen, and the 2 settings used here is the width of screen of device and initial scale means don't zoom in or out just 100% -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> <!-- css file where you get default styling, coloring and look of different widgets --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  <!-- standard jquery library --> 
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>  <!-- bootstrap javascript file --> 
+	<!-- code above used for bootstrap --> 
+</head>
+<body>
+
+	<!-- main navigation bar --> 	
+	<nav class="navbar navbar-inverse">  <!-- navbar-default is the styling of the navbar --> 
+		<div class="container-fluid">
+		
+			<!-- Logo Below --> 
+			<div class="navbar-header"> <!-- this lets bootstrap know that this isnt an actual button but just a logo --> 
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">  <!-- Navbar toggle button --> 
+					<span class="icon-bar"></span>  <!-- design of button --> 
+					<span class="icon-bar"></span>  <!-- design of button --> 
+					<span class="icon-bar"></span>  <!-- design of button --> 
+				</button>  
+				<a href="#" class="navbar-brand">PETERSWEBSITE</a>  <!-- you could link this to the homepage but the # is used for a dead link --> 
+			</div>
+			
+			<!-- Menu Items Below -->
+			<div class="collapse navbar-collapse" id="mainNavBar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Content</a></li>					
+				</ul>				
+			</div>
+		
+		</div>
+	</nav>
+	
+	
+	<!-- Main Content (below navigation bar) --> 
+	<div class="container">     <!-- class=container-fluid is full screen, class=container is just a fixed width --> 
+		
+		<h2>Wells are sections with borders and grey backgrounds</h2> 
+		
+		<!-- a well is a "floating island" that has a boarder and a grey background -->
+		<div class="well">Basic well</div> 
+		<div class="well well-sm">Basic well</div>  <!-- well small, takes away some padding --> 
+		
+		<!-- an alert is pretty much just a colored well -->
+		<div class="alert alert-success">Congratulations, you just won the game!</div>  <!-- "success" alert -->
+		
+		<div class="alert alert-info">   <!-- "info" alert that user can close out of --> 
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Don't forget Kelly's birthday today!
+		</div>  
+		
+		<div class="alert alert-danger fade in">   <!-- same as above info alert but red and fades out --> 
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Are you sure you want to delete your account?
+		</div> 
+		
+	</div>
+
+</body>
+</html>
